@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>ArIAdna Redes de Aprendizaje</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="div-log">
+        <a class="logo" href="../index.html">
+          <img src="../img/Logo.png" alt="ArIAdna Redes de aprendizaje" />
+        </a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./nosotros.html">Equipo docente</a></li>
+          <li><a href="./proyectos.html">Proyectos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li>
+            <a href="./carrito.html" class="carrito-icono">
+              🛒<span id="contador-carrito">0</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Su pedido</h1>
+      <section id="contenedor-carrito"><!-- para productos carrito --></section>
+      <div class="acciones-carrito" id="acciones-carrito">
+        <!--para acceder a botones de eliminar y finalizar-->
+      </div>
+      <!-- en resumen, total de precio a pagar se puede agregar acá? -->
+      <section id="resumen-carrito"></section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        ©Copyright 2025 ArIAdna Learningnets. Todos los derechos reservados.
+      </p>
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/diana-s-gayol-b96660b3/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://web.facebook.com/ariadnaredaprendizaje/"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script type="module" src="../js/carrito.js"></script>
+  </body>
+</html>

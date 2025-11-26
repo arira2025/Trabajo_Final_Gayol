@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Playfair Display" "sans-serif";
+  line-height: 1.5;
+  font-size: 1.6rem;
+
+  background: #bbd2ec;
+  color: #004987;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
+  display: block;
+}
+.btn {
+  background: #006a89;
+  color: #ad8a1f;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
+header,
+footer {
+  background: #006a89;
+  color: yellowgreen;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centrado vertical */
+  padding: 1rem 0;
+  min-height: 100px;
+}
+.div-log {
+  margin-left: 2rem;
+  flex-shrink: 0;
+  /* font-size: 3rem;
+  font-weight: bold; */
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 1rem;
+  display: block; /*  Para que el logo ocupe todo el espacio del contenedor y sea clickeable fácilmente */
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit; /*  Para mantener consistencia visual entre el contenedor del logo y la imagen */
+  object-fit: contain; /*  logo se ve completo, nítido y sin partes cortadas, aunque el contenedor sea cuadrado y el logo tenga otra forma. */
+}
+
+/* Menú horizontal - elementos uno al lado del otro */
+.header-nav {
+  margin-right: 2rem;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row; /* esto es lo que le da la posición horizontal (row) vertical (column)  */
+  gap: 1.5rem;
+  margin: 0rem;
+  text-align: center;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: inherit;
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  transition: background-color 0.3s ease; /* Efecto hover opcional */
+}
+/* Efecto hover opcional para mejor interactividad */
+.header-nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+}
+
+footer nav ul li {
+  padding: 1rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  justify-content: center;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ad8a1f;
+}
+
+.titulo-home {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.titulo-capacitaciones {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.parrafo {
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.contenedor-capacitaciones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background: #bbd2ec;
+  color: #004987;
+  width: 40rem;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem; /*  redondea los bordes */
+}
+
+/* Estilos para formulario de contacto */
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.form-contacto label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1.8rem;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border: 3px solid yellowgreen;
+  border-radius: 5px;
+}
+
+.form-contacto button {
+  margin-top: 0;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+/* estilo para Tablets */
+@media (max-width: 768px) {
+  header,
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150px;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  header .div-log,
+  .header-nav {
+    margin: 0;
+  }
+  /* nuevo */
+  .header-nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .contenedor-capacitaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ... todo tu CSS actual ... */
+
+/* Estilos para las tarjetas del carrito - AGREGAR AQUÍ */
+.tarjeta-producto {
+  background: #bbd2ec;
+  color: #004987;
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.tarjeta-producto img {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem;
+}
+
+.btn-eliminar-carrito {
+  background: #ff4d4d;
+  color: white;
+}
+
+.btn-vaciar-carrito {
+  background: #ff4d4d;
+  color: white;
+  margin: 1rem;
+}
+
+/* responsive para móviles */
+@media (max-width: 480px) {
+  main {
+    width: 95%; /* Más ancho en móvil */
+  }
+  .parrafo {
+    width: 95%; /* Texto más ancho */
+    font-size: 1.8rem; /* Texto más pequeño */
+    padding: 1.5rem;
+  }
+
+  .logo,
+  .header-nav ul li a {
+    font-size: 2rem; /* Texto de navegación más pequeño */
+    padding: 1rem;
+  }
+
+  .card {
+    width: 95%; /* Cards más angostas */
+  }
+  .btn {
+    padding: 1.2rem; /* Botones más compactos */
+    font-size: 1.4rem;
+    /* gap: 10px;
+    margin-top: 20px; */
+  }
+
+  /* nuevo header footer y nav */
+  /* Ajustes específicos para el header en móvil */
+  header,
+  footer {
+    min-height: 200px;
+  }
+
+  .header-nav ul li a {
+    font-size: 1.9rem;
+  }
+  .form-contacto {
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .form-contacto label {
+    width: 95%;
+    font-size: 1.6rem;
+  }
+  .botones {
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+  }
+  .form-contacto button {
+    width: 100%;
+  }
+}
